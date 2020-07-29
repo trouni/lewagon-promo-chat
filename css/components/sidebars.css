@@ -1,11 +1,23 @@
+#username {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+#username::placeholder {
+  background-color: red;
+  color: white;
+  padding: 3px;
+}
+
 .navbar-workspaces {
   min-width: 70px;
-  background-color: #251C24;
+  background-color: #251c24;
   text-align: center;
 }
 
 .navbar-workspace-icon {
-  color: #6C757D;
+  color: #6c757d;
   line-height: 28px;
   font-size: 20px;
   width: 44px;
@@ -18,13 +30,16 @@
   color: white;
 }
 
-.navbar-user i, .navbar-channel-item i {
+.navbar-user i,
+.navbar-channel-item i {
   font-size: 0.9em;
   /*margin-right: 0.5em;*/
 }
 
-.navbar-channel-item:hover, .navbar-user:hover {
+.navbar-channel-item:hover,
+.navbar-user:hover {
   color: white;
+  cursor: pointer;
 }
 
 .navbar-user i {
@@ -33,13 +48,13 @@
 }
 
 .navbar-user.online i {
-  color: #1EE5BD;
+  color: #1ee5bd;
 }
 
 .navbar-main {
   min-width: 250px;
-  background-color: #4B3949;
-  color: #A59CA4;
+  background-color: #4b3949;
+  color: #a59ca4;
 }
 
 .navbar-main h3 {
