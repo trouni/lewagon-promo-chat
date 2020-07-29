@@ -1,10 +1,17 @@
+#batch-number {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+}
+
 #username {
   background-color: transparent;
   border: none;
   color: white;
 }
 
-#username::placeholder {
+#username::placeholder,
+#batch-number::placeholder {
   background-color: red;
   color: white;
   padding: 3px;

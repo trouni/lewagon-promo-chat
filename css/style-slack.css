@@ -1,21 +1,23 @@
 /* Importing Google fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
 
 /* Importing components */
 @import url("components/sidebars.css");
 /*@import url("components/badges.css");*/
-@import url("components/chat.css");
+/* @import url("components/chat.css"); */
 @import url("components/messages.css");
 /*@import url("components/channels.css");*/
 
 /* Importing layouts */
-@import url("layouts/slack.css");
+/* @import url("layouts/slack.css"); */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: bold;
 }
 h1 {
@@ -36,3 +38,6 @@ h3 {
   color: white;
 }
 
+.underline-hover:hover {
+  text-decoration: underline;
+}
