@@ -1,0 +1,18 @@
+.avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.messages-panel input {
+  bottom: 0;
+}
+
+h3.messages-channel-name {
+  position: sticky;
+  top: 0;
+}
+
+.messages {
+  overflow: scroll;
+}

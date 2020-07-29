@@ -1,0 +1,47 @@
+.navbar-workspaces {
+  min-width: 70px;
+  background-color: #251C24;
+  text-align: center;
+}
+
+.navbar-workspace-icon {
+  color: #6C757D;
+  line-height: 28px;
+  font-size: 20px;
+  width: 44px;
+  margin: 10px auto;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.navbar-workspace-icon:hover {
+  color: white;
+}
+
+.navbar-user i, .navbar-channel-item i {
+  font-size: 0.9em;
+  /*margin-right: 0.5em;*/
+}
+
+.navbar-channel-item:hover, .navbar-user:hover {
+  color: white;
+}
+
+.navbar-user i {
+  font-size: 8px;
+  vertical-align: center;
+}
+
+.navbar-user.online i {
+  color: #1EE5BD;
+}
+
+.navbar-main {
+  min-width: 250px;
+  background-color: #4B3949;
+  color: #A59CA4;
+}
+
+.navbar-main h3 {
+  font-size: 16px;
+}

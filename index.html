@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slack prototype</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <link rel="stylesheet" href="css/style-slack.css">
+</head>
+
+<body>
+
+  <!-- TODO: Slack copycat markup -->
+  <div class="horizontal-layout d-flex">
+    <div class="navbar-workspaces sticky-top">
+      <div class="navbar-workspace-icon navbar-workspace-active rounded badge-secondary text-white">LW</div>
+      <div class="navbar-workspace-icon">SL</div>
+    </div>
+    <div class="navbar-main p-3 sticky-top">
+      <h2 class="text-white m-0">Le Wagon</h2>
+      <div class="navbar-user online"><i class="fas fa-circle m-0"></i> trouni</div>
+      <div class="navbar-channels-list mt-4">
+        <div class="navbar-channels-heading text-white d-flex justify-content-between">
+          <h3>Channels</h3><i class="fas fa-plus-circle"></i>
+        </div>
+        <ul class="list-unstyled">
+          <li class="navbar-channel-item channel-public"><i class="fab fa-slack-hash"></i> general</li>
+          <li class="navbar-channel-item channel-public"><i class="fab fa-slack-hash"></i> marketing</li>
+          <li class="navbar-channel-item channel-public active"><i class="fab fa-slack-hash"></i> <span
+              class="batch-number"></span></li>
+          <li class="navbar-channel-item channel-private"><i class="fab fa-slack-hash"></i> friday-karaoke 🎤</li>
+          <li class="navbar-channel-item channel-private"><i class="fas fa-lock"></i> saturday-karaoke 🎤</li>
+          <li class="navbar-channel-item channel-private"><i class="fas fa-lock"></i> drinking 🍺</li>
+          <li class="navbar-channel-item channel-private"><i class="fas fa-lock"></i> spontaneous-karaoke 🎤</li>
+        </ul>
+      </div>
+      <div class="navbar-channels-direct-list mt-4">
+        <div class="navbar-channels-heading text-white d-flex justify-content-between">
+          <h3>Direct Messages</h3><i class="fas fa-plus-circle"></i>
+        </div>
+        <ul id="users" class="list-unstyled">
+        </ul>
+      </div>
+    </div>
+    <div class="messages-panel p-3 vh-100 d-flex flex-column justify-content-between flex-grow-1">
+      <div class="messages vh-100">
+        <h3 class="bg-white messages-channel-name border-bottom pb-2"><i class="fab fa-slack-hash"></i> <span
+            class="batch-number"></span></h3>
+        <div class="pt-3" id="messages">
+        </div>
+      </div>
+      <input type="text" class="form-control w-100" placeholder="Type your message...">
+    </div>
+  </div>
+
+  <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="lib/index-slack.js"></script>
+</body>
+
+</html>
